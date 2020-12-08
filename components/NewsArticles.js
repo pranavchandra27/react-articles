@@ -11,7 +11,7 @@ const NewsArticles = () => {
 
       {articles && (
         <div className="grid">
-          {articles?.map((article) => (
+          {articles.map((article) => (
             <div key={article.short_url} className="article">
               <img
                 src={article.multimedia[3].url}
