@@ -8,7 +8,8 @@ const NewsArticles = () => {
   return (
     <div className="news-articles">
       <h2>Latest Articles</h2>
-      {articles.length && (
+
+      {articles && (
         <div className="grid">
           {articles?.map((article) => (
             <div key={article.short_url} className="article">
