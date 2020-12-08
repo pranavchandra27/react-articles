@@ -7,7 +7,7 @@ const NewsArticles = () => {
 
   return (
     <div className="news-articles">
-      <h2>Latest Articles</h2>
+      <h2>{articles.length ? "Latest News" : "Loading..."}</h2>
 
       {articles && (
         <div className="grid">
